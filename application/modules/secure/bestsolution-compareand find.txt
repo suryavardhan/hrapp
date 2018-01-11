@@ -1,0 +1,8 @@
+SELECT 
+question.q_id
+FROM 
+question 
+left join 
+question_options on question.q_id=question_options.q_id
+where 
+question.answer_type='radio' AND question_options.q_id IS NULL

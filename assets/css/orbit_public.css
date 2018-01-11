@@ -1,0 +1,280 @@
+img { border:none;}
+a { text-decoration:none;}
+
+@font-face {
+    font-family: 'OswaldLight';
+    src: url('Oswald-Light-webfont.eot');
+    src: url('Oswald-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Oswald-Light-webfont.woff') format('woff'),
+         url('Oswald-Light-webfont.ttf') format('truetype'),
+         url('Oswald-Light-webfont.svg#OswaldLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OswaldRegular';
+    src: url('Oswald-Regular-webfont.eot');
+    src: url('Oswald-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Oswald-Regular-webfont.woff') format('woff'),
+         url('Oswald-Regular-webfont.ttf') format('truetype'),
+         url('Oswald-Regular-webfont.svg#OswaldLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'BitstreamVeraSerifRoman';
+    src: url('VeraSerif-webfont.eot');
+    src: url('VeraSerif-webfont.eot?#iefix') format('embedded-opentype'),
+         url('VeraSerif-webfont.woff') format('woff'),
+         url('VeraSerif-webfont.ttf') format('truetype'),
+         url('VeraSerif-webfont.svg#BitstreamVeraSerifRoman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'BitstreamVeraSerifBold';
+    src: url('VeraSerif-Bold-webfont.eot');
+    src: url('VeraSerif-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('VeraSerif-Bold-webfont.woff') format('woff'),
+         url('VeraSerif-Bold-webfont.ttf') format('truetype'),
+         url('VeraSerif-Bold-webfont.svg#BitstreamVeraSerifBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body
+{
+ background:url(../img/bg.jpg) repeat-x #e0f2fe;
+ font-family: 'OswaldRegular';
+ font-size:12px;
+ color:#7c8184;
+ margin:0;
+ padding:0;
+}
+
+/*--------Logo---------*/
+.logo
+{
+  width:975px;
+  height:100px;
+  margin:0 auto;
+}
+/* Menu */
+.main_menu
+{
+  width:973px;
+  height:60px;
+  background:url(../img/menubar_bgimage.jpg) repeat-x;
+  margin:0 auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.main_menu ul { list-style:none; margin:0; padding:0;}
+.main_menu ul li { float:left; border-right:#69c3ff solid 1px; padding-left:8px; }
+.activem { background:url(../img/men_ac.png) repeat-x;}
+
+.h1career
+{
+  background:url(../img/h1.jpg) repeat-x;
+  text-align:center;
+   font-family: 'OswaldRegular';
+   text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+   color:#FFF;
+   margin:0 0 15px 0; padding:4px 0;
+   font-size:18px;
+   font-weight:normal;
+   border-radius: 3px 3px 0 0;
+}
+
+/*----- Intro ---------*/
+.intro
+{
+  width:971px;
+  height:330px;
+  border: solid 1px #5db7f3;
+  margin:0 auto;
+  background:#0284e6;
+}
+.intro_subpage
+{
+  width:961px;
+  height:31px;
+  border: solid 1px #5db7f3;
+  margin:0 auto;
+  padding:2px 5px;
+  background:#0284e6;
+  text-align:center;
+  font-family: 'OswaldRegular';
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+  font-size:18px;
+  color:#FFF;
+}
+.intro_welcome
+{
+
+width:336px;
+height:50px;
+background:url(../img/welcomebanner_bg.png) left top no-repeat;
+margin-left:-9px;
+margin-top:-50px;
+}
+
+.intro_left
+{
+ width:420px;
+ height:214px;
+ padding-top:78px;
+ float:left;
+}
+
+.intro_left p 
+{ 
+  padding:5px 31px 2px 30px; 
+  color:#FFFFFF; 
+  font-size:14px; 
+  font-weight:normal;
+  text-align:justify;
+  margin:3px 0px;
+}
+.ul_left
+{
+  color:#FFFFFF; 
+  font-size:14px; 
+  float:left;
+  margin-left:17px;
+  padding-left:15px;
+}
+
+.intro_right
+{
+	width: 530px;
+	height: 295px;
+	float: left;
+	margin:14px 0px 0px 5px;
+
+
+}
+/*--- Home content------*/
+.home_content
+{
+  width:975px;
+  height:448px;
+  margin:10px auto 5px auto;  
+}
+.sub_content
+{
+  width:960px;
+  min-height:448px;
+  overflow:auto;
+  margin:10px auto;
+  background:#FFFFFF;
+  border:1px solid #bbeafe;
+  border-radius:5px;
+  padding:5px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);  
+}
+.left_arrow
+{
+  width:9px;
+  height:11px;
+  background:url(../img/left_arrow.png);
+  position:absolute;
+  margin:12px 0 0 -6px;
+}
+
+.hc_left
+{
+  width:645px;
+  height:428px;
+  background:#FFFFFF;
+  border:1px solid #bbeafe;
+  border-radius:5px;
+  padding:5px;
+  float: left;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  font-family:BitstreamVeraSerifRoman;
+  font-size:13px;
+}
+.hc_left h1 { margin:5px 6px;}
+.hc_left h2 { margin:5px 6px; color:#0184e6; font-family:OswaldRegular; font-weight:normal;}
+.hc_left p { margin:9px 5px; font-size:13px; color:#575858; }
+.hc_left  ul {  color:#575858; list-style:none; padding-left:10px;}
+.hc_left  ul  li{  background:url(../img/bullet.png) no-repeat left top; padding: 0px 0px 12px 22px; font-family:BitstreamVeraSerifRoman; font-size:13px;}
+
+.hc_right
+{
+  width:300px;
+  height:438px;
+  background:#eaf7ff;
+  border:1px solid #bbeafe;
+  border-radius:5px;
+  float: left;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  margin-left:12px;
+}
+.info
+{
+  min-height:38px;
+  padding:8px;
+  text-align:right;
+  overflow:auto;
+  border-bottom:dotted 1px #c3deee;
+}
+.info h2 { margin:1px 0; font-size:16px; font-family:OswaldRegular; font-weight:normal}
+.info a { color:#2ba4fe; }
+/* -- Carousel area --*/
+.rotator
+{
+ width:975px;
+ height:180px;
+ margin:0 auto;
+ background: url(../img/logoslider_bg.jpg) #b6ddfc;
+ border:1px solid #bbeafe;
+ border-radius:5px;
+ box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+}
+.carouselx
+{
+  width:800px;
+  height:128px;
+  margin:0px auto 0 auto;
+}
+
+      ul#items{		
+		margin:0;
+		padding:0;
+		width:auto;
+		height:128px;
+		overflow:hidden;
+		}	
+	
+	ul#items li{
+		list-style:none;
+		float:left;
+		height:128px;
+		overflow:hidden;
+		margin:0 8px;
+		}
+
+.cardiv { width:239px; height:120px; background:#FFFFFF;padding:3px; border-radius:8px; text-align:center;}
+/* footer box */
+.footer
+{
+ width:975px;
+ height:65px;
+ margin:8px auto 0 auto;
+ background: url(../img/footer_bg.jpg) #b6ddfc;
+ border:1px solid #bbeafe;
+ border-radius:5px;
+ text-align:center;
+ color:#021428; text-shadow:1px 1px 0px #369be4; font-size:12px;  font-family:'OswaldRegular';
+}
+.centerify { margin:0 auto; width:500px; height:35px;}
+.footer ul { list-style:none; margin:10px 0 0 0; padding:0; font-family:'OswaldRegular';}
+.footer ul  li { display:inline; padding:5px 8px; border-right:solid 1px #FFF;}
+.footer ul  li a{ color:#FFF; text-shadow:1px 1px 0px rgba(0,0,0,0.5); font-size:16px;}

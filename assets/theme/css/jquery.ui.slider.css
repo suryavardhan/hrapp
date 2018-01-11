@@ -1,0 +1,26 @@
+/*
+ * jQuery UI Slider 1.8.18
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Slider#theming
+ */
+.ui-slider { position: relative; text-align: left; background:#d2d7db; border:solid 1px #bdc3c8; border-radius:6px;  }
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.3em; height: 1.2em; cursor: default; }
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background:url(./images/slider_bar.png) repeat-x center top; }
+
+.ui-slider-horizontal { height: .4em; }
+.ui-slider-horizontal .ui-slider-handle { top: -.4em; margin-left: -.6em; background:url(./images/slider_nob.png) no-repeat center top; border:none;}
+.ui-slider-horizontal .ui-slider-handle.ui-state-active{ background-position:center -19px}
+.ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+
+.ui-slider-vertical { width: .4em; height: 100px; }
+.ui-slider-vertical .ui-slider-handle { left: 0.2em; margin-left: -.6em; background:url(./images/slider_nob.png) no-repeat center top; border:none; }
+.ui-slider-vertical .ui-slider-handle.ui-state-active{ background-position:bottom}
+.ui-slider-vertical .ui-slider-range { left: 0; width: 100% ;background:url(./images/slider_bar_vl.png) repeat-y center top; }
+.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max { top: 0; }

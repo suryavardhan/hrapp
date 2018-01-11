@@ -1,0 +1,10 @@
+
+SQL to Find count of tests along with test data
+------------------------------------------------
+
+SELECT a.*, COUNT(c.exam_template_id) AS assignCount
+ FROM exam_main AS a
+ LEFT JOIN assigned_exam_templates AS c ON ( c.exam_template_id = a.exam_id )
+ GROUP BY c.exam_template_id
+ ORDER BY exam_template_id DESC
+

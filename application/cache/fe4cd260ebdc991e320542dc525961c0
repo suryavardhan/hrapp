@@ -1,0 +1,271 @@
+1498023982TS---><!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<title>Supportsages HR</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://localhost/etheme/assets/theme/images/favicon.ico">
+<!--Stylesheets-->
+<link rel="stylesheet" href="http://localhost/etheme/assets/theme/css/reset.css" />
+<link rel="stylesheet" href="http://localhost/etheme/assets/theme/css/main.css" />
+<link rel="stylesheet" href="http://localhost/etheme/assets/theme/css/typography.css" />
+<link rel="stylesheet" href="http://localhost/etheme/assets/theme/css/bootstrap.css" />
+<link rel="stylesheet" href="http://localhost/etheme/assets/theme/css/highlight.css" />
+
+<link rel="stylesheet" href="http://localhost/etheme/assets/theme/css/tipsy.css" />
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/blitzer/jquery-ui.css" type="text/css" />
+
+<!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <![endif]-->
+<!--Javascript-->
+
+<script type="text/javascript" src="http://localhost/etheme/assets/theme/js/jquery.min.js"> </script>
+<script type="text/javascript" src="http://localhost/etheme/assets/theme/js/jquery.quicksand.js"> </script>
+<script type="text/javascript" src="http://localhost/etheme/assets/theme/js/jquery.easing.1.3.js"> </script>
+<script type="text/javascript" src="http://localhost/etheme/assets/theme/js/jquery.tipsy.js"> </script>
+<script type="text/javascript" src="http://localhost/etheme/assets/theme/js/jquery.autogrowtextarea.js"></script>
+<script type="text/javascript" src="http://localhost/etheme/assets/theme/js/form_elements.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="http://localhost/etheme/assets/theme/js/jquery.ui.core.js"></script>
+<script type="text/javascript" src="http://localhost/etheme/assets/theme/js/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="http://localhost/etheme/assets/theme/js/jquery.ui.mouse.js"></script>
+<script type="text/javascript" src="http://localhost/etheme/assets/theme/js/jquery.ui.datepicker.js"></script>
+<script type="text/javascript" src="http://localhost/etheme/assets/theme/js/jquery.ui.tabs.js"></script>
+
+<script type="text/javascript" src="http://localhost/etheme/assets/theme/js/bootstrap-modal.js"></script>
+
+<!-- Search box -->
+<script type="text/javascript">
+$(document).ready(function(){
+
+     $('.search-result').hide();
+
+     $("#ac").keyup( 
+      function(){
+            if($('#ac').val() == '') 
+            {
+             $('.search-result').hide(); 
+            }
+            else 
+            {
+              $('.search-result').show();
+            }
+            $.ajax({
+                 url: "http://localhost/etheme/secure/ajax/globalSearch",
+                 type:'POST',
+                 data: { searchkey:$('#ac').val() },
+                 success: function(html){
+                      $(".search-result").html(html);                      
+                   } 
+                });
+
+      });
+
+});     
+</script>
+
+<meta charset="UTF-8"></head>
+
+      
+    <script type="text/javascript" src="http://localhost/etheme/assets/js/genvalidator.js" xml:space="preserve" ></script>	
+</head>
+<body>
+<!--Header-->
+<header>
+    <!--Logo-->
+    <div id="logo"><a href="#"><img src="http://localhost/etheme/assets/theme/images/logo.png" alt="" /></a></div>
+    <!--Search-->
+    <div class="header_search">
+        <form action="" autocomplete="off">
+            <input type="text" name="search" placeholder="Search" id="ac">
+            <input type="submit" value="">
+        </form>
+        <div class="search-result">
+     
+        </div> 
+    </div>
+</header>	<!-- elRTE -->
+<script src="http://localhost/etheme/assets/js/elrte.min.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="http://localhost/etheme/assets/css/elrte.min.css" type="text/css" media="screen" charset="utf-8">
+
+<script type="text/javascript">
+//Highlight menu   
+	$(document).ready(function() {  
+	$(".hc2").addClass("active");
+	$(".qp1").addClass("active");
+	
+//Elrte
+var opts = {
+              styleWithCSS : false,
+              height       : 150,
+              toolbar      : 'compact'
+			}
+			$('#question').elrte(opts);	
+
+/* elRte validation */
+			$('#myform').submit(function(e) {
+			  var text = $('#question').elrte('val');
+			  if (!text) {
+			    e.preventDefault();
+			    alert('Question  is required!');
+			  }
+			})
+
+//Ajax load city
+	 $("#ans_mode").change( 
+      function(){ 
+	  $.ajax({
+	  url: "http://localhost/etheme/secure/ajax/load_answer_input",
+	  type:'POST',
+	  data: {ans_style:$('#ans_mode').val()},
+	  success: function(html){
+		$("#ajax_load_answering").html(html);
+			
+	  } });
+    });
+	
+	});
+
+		
+</script>
+<script type="text/javascript" src="http://localhost/etheme/assets/js/loaderanim.js"></script>
+
+<!--Dreamworks Container-->
+<div id="dreamworks_container">
+
+<!--Primary Navigation-->
+    <nav id="primary_nav">
+        <ul>
+            <li class="hc1 nav_dashboard"><a href="http://localhost/etheme/secure/index"><span>Dashboard</span></a></li> <!-- Active -->
+            <li class="hc5 nav_typography"><a href="http://localhost/etheme/secure/job/showall"><span>Job Openings</span></a></li>         
+            <li class="hc2 nav_forms"><a href="http://localhost/etheme/secure/questionpool/questions"><span>Question Pool</span></a></li>
+            <li class="hc3 nav_graphs"><a href="http://localhost/etheme/secure/managetest/list_test_templates"><span>Exams</span></a></li>
+            <li class="hc4 nav_uielements"><a href="http://localhost/etheme/secure/candidates/showall"><span>Candidates</span></a></li>
+            <li class="hc6 nav_pages"><a href="http://localhost/etheme/secure/settings"><span>Settings</span></a></li>
+        </ul>
+    </nav>
+<!--Main Content-->
+<section id="main_content">
+<!--Secondary Navigation-->
+
+<nav id="secondary_nav"> 
+<!--UserInfo-->
+<dl class="user_info">
+    <style>.user_info img{ border-radius:5px; border:solid 1px #FFF;}</style>
+	<dt>
+        <a target="_blank" href="https://en.gravatar.com/" title="Change Avatar using Gravatar">
+                        <img src="http://www.gravatar.com/avatar/f8830bd258f04d16f0724e086930106a?s=77&d=identicon&r=x" />          <!-- <img src="http://localhost/etheme/assets/theme/images/avatar.png" alt="" /> -->
+        </a>
+    </dt>
+    <dd>
+    <a class="welcome_user" href="#">Welcome, <strong style="text-transform:capitalize;">adminis</strong></a>
+    <span class="log_data">Last sign in : 2017-06-21 07:07:34</span>
+    <a class="logout"  href="http://localhost/etheme/secure/secure/logout">Logout</a>
+    <a class="user_messages" href="http://localhost/etheme/secure/candidates/pendingreviews">
+        <span>1</span>
+        </a>
+    </dd>
+</dl>
+
+<!-- Page Specific Links goes here -->
+<h2>Question Pool</h2>
+<ul>
+    <li class="qp1"><a href="http://localhost/etheme/secure/questionpool"><span class="iconsweet">+</span> Add Question</a></li>
+	<li class="qp2"><a href="http://localhost/etheme/secure/questionpool/questions"><span class="iconsweet">|</span> List Questions</a></li>
+	<li class="qp3"><a href="http://localhost/etheme/secure/questionpool/open/addcategory"><span class="iconsweet">W</span> Add Category</a></li>
+	<li class="qp4"><a href="http://localhost/etheme/secure/questionpool/open/addlevels"><span class="iconsweet">l</span> Add Levels</a></li>
+	<li class="qp5"><a href="http://localhost/etheme/secure/questionpool/countofquestions"><span class="iconsweet">Z</span> Questions Count</a></li>
+</ul><!-- 
+VALID TEMPLATE 	
+<h2>Dashboard</h2>
+<ul>
+	<li><a href="#"><span class="iconsweet">a</span>User Profiles</a></li>
+    <li><a href="#"><span class="iconsweet">k</span>Admin Tools</a></li>
+    <li><a href="#"><span class="iconsweet">o</span>Milestornes</a></li>
+    <li><a href="#"><span class="iconsweet">S</span>Worklog</a></li>
+</ul> 
+-->
+
+</nav><div id="content_wrap">	
+ 
+
+   
+
+           	
+ 	
+	 <div class="one_wrap">
+
+	    <style>
+        	.nostyle select {  width:150px;}
+        	.ajaxian { list-style: none; margin:0; padding:0;}
+        </style>
+	   <!-- Form goes here -->
+    	<div class="widget">
+        	<div class="widget_title"><span class="iconsweet">?</span><h5>Add Question</h5></div>
+            <div class="widget_body">
+
+	    <form action="http://localhost/etheme/secure/questionpool/add" method="post" enctype="multipart/form-data" name="myform" id="myform" autocomplete="off">
+	            <ul class="form_fields_container">
+	            	<li><label>Question</label> 
+	            		<div class="form_input">
+                             <input type="text" size="60" name="question" id="question" class="input-text" />
+	            		</div>      		
+	            	</li>
+	            	<li><label>Category</label> 
+	            		<div class="form_input">
+							<select name="category">
+                            <option>English Language</option><option>General Awareness</option><option>Linux</option><option>Quantitative Aptitude</option><option>Verbal Ability</option><option>Error Recognition in EN Language</option><option>Malayalam - English Vocabulary</option><option>Short Essay</option><option>Linux  Basics</option>	
+							</select>
+	            		</div>      		
+	            	</li>
+	            	<li><label>Skill Level</label> 
+	            		<div class="form_input">
+                           <select name="level">
+                            <option>Beginner</option><option>Intermediate</option><option>Expert</option><option>General</option>	
+							</select>
+	            		</div>      		
+	            	</li>	            	
+	            	<li><label>Answering Mode</label> 
+	            		<div class="form_input">
+							<select name="answer_mod" id="ans_mode">
+								<option value="type">Type Answer</option>
+								<option value="radio">Opt One</option>
+								<option value="check">Opt Mutiple</option>
+							</select>
+	            		</div>      		
+	            	</li>
+	            	<li><label>Options/Hints</label> 
+	            		<div class="form_input">
+						<div id="ajax_load_answering">
+			                <table style="border:none;"><tr><td>Answer Hints</td><tr/><tr><td><textarea name="answer_hint" rows="3"  cols="55"></textarea></td></tr></table>						</div>	
+	            		</div>      		
+	            	</li>
+	            	<li><label>Exhibit</label> 
+	            		<div class="form_input">
+                             <input type="file" size="40" name="exhibit" class="input-text" />
+	            		</div>      		
+	            	</li>	            		            	
+	             </ul>	
+            <div class="action_bar">
+                 <input type="submit" class="button_small bluishBtn" value="Add Question" />
+            </div>							
+			</form>
+
+         </div>
+     </div>
+	   <!-- ends here -->
+	 </div>
+ 
+</div>
+</section>	
+</body>
+</html>
+ 
+
+
+        
+        
+        
+

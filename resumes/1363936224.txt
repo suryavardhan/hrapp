@@ -1,0 +1,48 @@
+Multiple home page
+
+Left side -right side vertical navigation
+
+Typography Page - Multi column text, headings, dropcaps, blockquotes , pullquotes
+
+Buttons and Alerts page
+
+Vertical and Horizontal Tabs
+
+List, Tables, Price Tables, 
+
+Toggles Accordion
+
+Multi Column portfolio
+
+Blog - Single wide/sidebars-left/right, posts - types-sidebars-left/right
+
+Pages - Team - Skillset, 404, About, services
+
+   - Iconed Heading Texts
+
+Contact Us - Multiple Layouts
+
+
+Kindly post your issue on our forum <a href="http://forum.pixelglimpse.com">forum.pixelglimpse.com</a>. So as our Wordpress support team will assist you.
+
+New to add
+------------------------
+
+Coming Soon
+Simple Gallery
+Careers Page
+
+<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700|Lato:400,700|Arimo:400,700' rel='stylesheet' type='text/css'>
+
+Tabs alternate styles 
+Accordion Alternate Styles
+
+Process Steps - one Created
+
+
+
+Additional Plugins
+-------------------
+https://github.com/scottjehl/Respond - Media QuerySupport
+https://github.com/mathiasbynens/jquery-placeholder
+

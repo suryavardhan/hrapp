@@ -1,0 +1,1 @@
+Tank auth library altered for adding role values
